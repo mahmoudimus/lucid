@@ -143,9 +143,9 @@ class OptionSet:
 class OptionListener:
     __providers = []
 
-    def __init_subclass__(cls, /, providers=[], **kwargs):
+    def __init_subclass__(cls, /, **kwargs):
         super().__init_subclass__(**kwargs)
-        cls.__providers = providers
+        cls.__providers = getattr(cls, "__providers", [])
 
     def __new__(cls, *args, **kwargs):
         obj = super().__new__(cls, *args, **kwargs)

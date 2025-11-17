@@ -531,13 +531,12 @@ class MicrocodeExplorerModel(object):
 # -----------------------------------------------------------------------------
 
 
-class MicrocodeExplorerView(
-    OptionListener, QtWidgets.QWidget, providers=[MicrocodeOptions]
-):
+class MicrocodeExplorerView(OptionListener, QtWidgets.QWidget):
     """
     The view component of the Microcode Explorer.
     """
 
+    __providers = [MicrocodeOptions]  # pylance: ignore
     WINDOW_TITLE = "Microcode Explorer"
 
     def __init__(self, controller: MicrocodeExplorer, model: MicrocodeExplorerModel):

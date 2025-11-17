@@ -1,11 +1,16 @@
 import ida_funcs
-import ida_lines
-import ida_idaapi
 import ida_hexrays
-
-from lucid.text import TextCell, TextToken, TextLine, TextBlock
+import ida_idaapi
+import ida_lines
+from lucid.text import TextBlock, TextCell, TextLine, TextToken
+from lucid.util.hexrays import (
+    IPROP_FLAG_NAMES,
+    MBL_FLAG_NAMES,
+    MBL_PROP_NAMES,
+    MBL_TYPE_NAMES,
+    get_microcode,
+)
 from lucid.util.ida import tag_text
-from lucid.util.hexrays import get_microcode, IPROP_FLAG_NAMES, MBL_TYPE_NAMES, MBL_PROP_NAMES, MBL_FLAG_NAMES
 from lucid.util.options import OptionProvider
 
 #-----------------------------------------------------------------------------
