@@ -1,0 +1,11 @@
+{
+    "IDAMetadataDescriptorVersion": 1,
+    "plugin": {
+        "name": "Lucid",
+        "entryPoint": "lucid_plugin.py",
+        "categories": ["decompilation", "deobfuscation", "malware-analysis"],
+        "idaVersions": ">=9.0",
+        "description": "A plugin for exploring the Hex-Rays microcode.",
+        "version": "0.3.0"
+    }
+}
