@@ -1,8 +1,8 @@
 import ida_hexrays
 import ida_kernwin
-from PyQt5 import QtWidgets
 
 from lucid.util.hexrays import get_all_vdui, map_line2citem, map_line2ea
+from lucid.util.qt_shim import QtWidgets
 
 #------------------------------------------------------------------------------
 # Microcode Cursor Syncing

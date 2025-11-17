@@ -1,4 +1,3 @@
-from typing import Any
 import ida_funcs
 import ida_lines
 import ida_idaapi
@@ -7,7 +6,7 @@ import ida_hexrays
 from lucid.text import TextCell, TextToken, TextLine, TextBlock
 from lucid.util.ida import tag_text
 from lucid.util.hexrays import get_microcode, IPROP_FLAG_NAMES, MBL_TYPE_NAMES, MBL_PROP_NAMES, MBL_FLAG_NAMES
-from lucid.util.options import OptionListener, OptionProvider
+from lucid.util.options import OptionProvider
 
 #-----------------------------------------------------------------------------
 # Microtext
