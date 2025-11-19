@@ -109,7 +109,6 @@ except ImportError:
             QKeySequence,
             QPalette,
             QPixmap,
-            QShortcut,
             QTextCursor,
         )
         from PyQt5.QtWidgets import (
@@ -126,6 +125,7 @@ except ImportError:
             QMenu,
             QMessageBox,
             QPushButton,
+            QShortcut,
             QSizePolicy,
             QSplitter,
             QStatusBar,
